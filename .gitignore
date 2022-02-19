@@ -2,3 +2,5 @@
 *.pdb
 bin/
 obj/
+.vscode/
+
