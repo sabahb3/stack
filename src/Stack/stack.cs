@@ -31,6 +31,21 @@ namespace StackTask
             Console.WriteLine(stackElements);
         }
 
-        
+        public T? Pop(){
+                if(top!=null){
+                T data = top.data!;
+                top=top.next;
+                return data;
+            }
+            else 
+            {
+                Console.WriteLine("Stack is empty");
+                Exception ex=new Exception("THe stack is Empty");
+                throw(ex);
+            }
+
+
+              
+        }
     }
 }
